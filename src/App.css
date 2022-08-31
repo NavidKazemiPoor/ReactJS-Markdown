@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  box-shadow: var(--dark-shadow);
+  margin: 0 15px;
+  padding: 10px;
+  resize: none;
+  height: 500px;
+
+}
+.markdown-preview {
+  width: 100%;
+  height: 500px;
+
+}
+
+.markdown-preview {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  textarea {
+    margin: 10px 0;
+  }
+  textarea,.markdown-preview{
+    height: 300px;
+  }
+}

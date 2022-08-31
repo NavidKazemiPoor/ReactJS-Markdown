@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--clr-grey-10);
+}
